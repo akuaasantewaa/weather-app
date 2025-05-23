@@ -56,6 +56,6 @@ Your app should now be running on [http://localhost:3000](http://localhost:3000)
 - API: [Open-Meteo API](https://open-meteo.com/)
 - Tools Used: Visual Studio Code, GitHub, Cursor
 
-3. **Code Organization**:
+4. **Code Organization**:
    - Split code into proper React project file structure
    - Added comments for better code readability
