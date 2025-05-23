@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Project Structure
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```
+weather-app/
+├── public/
+│   └── index.html     # HTML template
+└── src/
+    ├── App.js         # Main React component
+    ├── App.css        # Component styling
+    └── index.js       # Entry point
+```
 
-## Available Scripts
+# 🌤️ Weather App
 
-In the project directory, you can run:
+A simple and responsive **React** application that fetches and displays real-time weather data for multiple cities using the [Open-Meteo API](https://open-meteo.com/). Users can search for any city and view details like temperature, wind speed, and a human-readable weather description.
 
-### `npm start`
+## 📸 Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Screenshot 1](./screenshots/screenshot1.png)  
+![Screenshot 2](./screenshots/screenshot2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> You can also view a short demo video [here](https://drive.google.com/your-demo-link).
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🔍 **City Search** – Enter a city name to get live weather data.
+- 📊 **Current Weather Info** – View temperature, wind speed, and weather status.
+- ➕ **Multiple Cities** – Add and track weather for multiple cities in one session.
+- ⚠️ **Error Handling** – Informs users when the city is not found or input is empty.
+- 🧠 **Readable Descriptions** – Weather codes are converted to descriptive terms.
+- 💡 **AI-Assisted Development** – Built with assistance from ChatGPT for code debugging and optimization.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**: React, CSS
+- **API**: [Open-Meteo API](https://open-meteo.com/)
+- **Tools Used**: Visual Studio Code, GitHub, ChatGPT
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📦 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js and npm installed
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+````bash
+git clone https://github.com/your-username/weather-app.git
+cd weather-app
+npm install
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Setup Instructions
 
-### Analyzing the Bundle Size
+1. Create a new React app:
+```bash
+npx create-react-app weather-app
+cd weather-app
+````
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Replace the files in your project with the ones provided:
 
-### Making a Progressive Web App
+   - Replace `src/App.js` with the App.js file
+   - Replace `src/App.css` with the App.css file
+   - Replace `src/index.js` with the index.js file
+   - Replace `public/index.html` with the index.html file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. Start the development server:
 
-### Advanced Configuration
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Your app should now be running on [http://localhost:3000](http://localhost:3000)
 
-### Deployment
+## Bug Fixes and Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. **Fixed API Calls**:
 
-### `npm run build` fails to minify
+   - Updated the Open-Meteo API endpoint from `current_weather` to `current`
+   - Adjusted property paths to match the updated API response structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Added Features**:
+
+   - Loading state indicator
+   - Weather code translation to human-readable descriptions
+   - Keyboard support (Enter key)
+   - Input validation
+   - Improved error handling
+   - Updated styling with disabled button state
+
+3. **Code Organization**:
+   - Split code into proper React project file structure
+   - Added comments for better code readability
