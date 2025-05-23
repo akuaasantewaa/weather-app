@@ -10,6 +10,11 @@ weather-app/
     └── index.js       # Entry point
 ```
 
+🌤️ Weather App
+
+A simple and responsive **React** application that fetches and displays real-time weather data for multiple cities using the [Open-Meteo API](https://open-meteo.com/). Users can search for any city and view details like temperature, wind speed, and a human-readable weather description.
+
+
 ## Setup Instructions
 
 1. Create a new React app:
@@ -44,6 +49,12 @@ Your app should now be running on [http://localhost:3000](http://localhost:3000)
    - Input validation
    - Improved error handling
    - Updated styling with disabled button state
+
+3. **🛠️ Tech Stack**
+
+- Frontend: React, CSS
+- API: [Open-Meteo API](https://open-meteo.com/)
+- Tools Used: Visual Studio Code, GitHub, Cursor
 
 3. **Code Organization**:
    - Split code into proper React project file structure
